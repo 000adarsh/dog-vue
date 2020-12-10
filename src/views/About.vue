@@ -18,10 +18,10 @@ export default {
       if (!this.$store.getters.getDogList) {
         this.$store.dispatch("dogFetchAction");
       }
-    },
+    }
   },
   mounted() {
     this.dogfetch();
-  },
+  }
 };
 </script>

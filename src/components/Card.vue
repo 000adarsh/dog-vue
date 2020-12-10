@@ -32,21 +32,21 @@
 export default {
   data() {
     return {
-      breed: "affenpinscher",
+      breed: "affenpinscher"
     };
   },
   props: {
-    dogProp: Array,
+    dogProp: Array
   },
   methods: {
     imageFetch() {
       this.$store.dispatch("dogImageFetch", this.breed);
-    },
+    }
   },
   computed: {
     dogListLen() {
       return this.$store.getters.getDogList.length;
-    },
+    }
   },
   watch: {
     dogListLen() {
@@ -56,8 +56,8 @@ export default {
         ];
       }
       this.imageFetch();
-    },
-  },
+    }
+  }
 };
 </script>
 

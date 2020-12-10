@@ -11,17 +11,17 @@ import Card from "@/components/Card.vue";
 export default {
   name: "Home",
   components: {
-    Card,
+    Card
   },
   methods: {
     dogListFetch() {
       if (!this.$store.getters.getDogList.length != 0) {
         this.$store.dispatch("dogFetchAction");
       }
-    },
+    }
   },
   created() {
     this.dogListFetch();
-  },
+  }
 };
 </script>

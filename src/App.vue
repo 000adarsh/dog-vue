@@ -50,7 +50,7 @@ export default {
   name: "App",
   data() {
     return {
-      drawer: false,
+      drawer: false
     };
   },
   methods: {
@@ -63,7 +63,7 @@ export default {
         this.$vuetify.theme.isDark = false;
       }
       console.log(data);
-    },
-  },
+    }
+  }
 };
 </script>

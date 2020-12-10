@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     doglist: [],
-    dogimage: null,
+    dogimage: null
   },
   getters: {
     getDogList(state) {
@@ -14,7 +14,7 @@ export default new Vuex.Store({
     },
     getDogImage(state) {
       return state.dogimage;
-    },
+    }
   },
   mutations: {
     DOGLIST_SETTER(state, payload) {
@@ -22,7 +22,7 @@ export default new Vuex.Store({
     },
     DOGIMAGE_SETTER(state, payload) {
       state.dogimage = payload;
-    },
+    }
   },
   actions: {
     async dogFetchAction(context) {
@@ -44,7 +44,7 @@ export default new Vuex.Store({
       } catch (err) {
         console.log(err);
       }
-    },
+    }
   },
-  modules: {},
+  modules: {}
 });
